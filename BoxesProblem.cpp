@@ -2,12 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-typedef struct ll{
-    int num;
-    ll *next;
-}ll;
-typedef ll *pll;
-
 //Randomize an int array
 void shuffle(int *arr, size_t n, int r)
 {
