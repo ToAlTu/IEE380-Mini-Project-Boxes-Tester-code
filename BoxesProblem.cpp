@@ -51,11 +51,11 @@ void searchBoxesMethod2(bool* lop, int* boxes, int n){
         counter = 0;
         tag = boxes[i];
         while((counter < n/2) && !lop[i]){
-            if(tag == i){
+            if(tag == i)
                 lop[i] = true;
-            }else{
+            else
                 tag = boxes[tag];
-            }
+            
             counter++;
         }
     }
@@ -88,11 +88,11 @@ int main(int argc, char *argv[]){
         }
         int* number = boxes;
         shuffle(boxes, capacity, j);
-        if(type == 1){
+        if(type == 1)
             searchBoxesMethod1(lop, boxes, capacity, number);
-        }else if(type == 2){
+        else if(type == 2)
             searchBoxesMethod2(lop, boxes, capacity);
-        }
+        
         for (int i = 0; i < capacity; i++){
             if(lop[i])
                 success++;
