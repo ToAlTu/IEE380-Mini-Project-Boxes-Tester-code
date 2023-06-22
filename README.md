@@ -7,7 +7,9 @@ Download both files, then in console type "make"
 After which type "./BoxProb \<Amount of people> \<Amount of trials> \<Method> \<info>"
 
 Methods:
+
 1: Randomly pick boxes
+
 2: Pick box based on what was given from the previous box
 
 Info:
